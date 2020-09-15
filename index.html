@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>DigiGram</title>
+  </head>
+  <body>
+    <div class="container">
+      <h3 class="nav-brand">DigiGram</h3>
+
+      <div class="profil">
+        <img src="/img/profil-image.jpg" class="profil_image" />
+        <div class="profil_data">
+          <div class="profil_data__username">@raflidev</div>
+          <div class="profil_data__name">Muhammad Rafli Ramadhan</div>
+        </div>
+      </div>
+      <div class="feed">
+        <img src="/img/1.jpg" />
+        <img src="/img/2.jpg" />
+        <img src="/img/3.jpg" />
+        <img src="/img/4.jpg" />
+        <img src="/img/5.jpg" />
+        <img src="/img/6.jpg" />
+        <img src="/img/7.jpg" />
+        <img src="/img/8.jpg" />
+        <img src="/img/9.jpg" />
+      </div>
+    </div>
+  </body>
+  <style>
+    html {
+      font-family: "Quicksand", sans-serif;
+      background-color: #e5e5e5;
+    }
+    .container {
+      padding: 0 10%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .nav-brand {
+      font-weight: 700;
+      font-size: 24px;
+      display: flex;
+      justify-content: center;
+    }
+    .profil {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .profil_image {
+      border-radius: 50%;
+      width: 160px;
+      height: 160px;
+    }
+    .profil_data {
+      margin-left: 27px;
+      font-size: 24px;
+      margin-top: 18px;
+    }
+    .profil_data__username {
+      font-weight: 700;
+    }
+    .feed {
+      display: grid;
+      grid-template-columns: auto auto auto;
+      grid-column-gap: 50px;
+      margin-top: 38px;
+    }
+    .feed > img {
+      margin-bottom: 50px;
+    }
+
+    @media screen and (max-width: 743px) {
+      .feed {
+        grid-template-columns: auto;
+        justify-content: center;
+      }
+      .profil_image {
+        display: flex;
+        justify-content: center;
+      }
+    }
+  </style>
+</html>
